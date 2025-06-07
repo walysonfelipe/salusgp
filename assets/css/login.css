@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .container {
@@ -73,6 +77,10 @@ input[type=text], input[type=password] {
     background-color: #e07305;
 }
 
+input {
+color: #ffffff;
+}
+
 @media (max-width: 360px) {
     .logo,
     .footer-logo {
@@ -112,4 +120,24 @@ input[type=text], input[type=password] {
     .login-form {
         padding: 20px;
     }
+}
+
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  font-size: 15px;
+  color: #FF7F00;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #FF7F00;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #FF7F00;
+  color: white;
 }

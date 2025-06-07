@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salus - Administrador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <header>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav id="sidenav" class="sidenav">
+        <div class="user-info">
+            <div class="avatar">WA</div>
+            <div>
+                <div class="first-name">Walyson</div>
+                <div class="user-role">Administrador</div>
+            </div>
+        </div>
+        <ul>
+
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+            <li><a href="denuncia.html"><i class="fa-solid fa-triangle-exclamation"></i> Denúncias</a></li>
+            <li><a href="listavistoria.html"><i class="fa-solid fa-magnifying-glass"></i> Vistorias</a></li>
+            <li><a href="#"><i class="fa-solid fa-file-lines"></i>Relatórios</a></li>
+            <li class="button">
+                <a href="index.html">Sair</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="greeting">
+            <p>Olá <strong>Walyson</strong>, Seja Bem-Vindo</p>
+            <h1>Sistema de Gestão</h1>
+        </section>
+
+        <section class="logos">
+            <img src="../assets/images/logo.png" alt="Logo Salus" class="logo salus" />
+            <img src="../assets/images/lins2.png" alt="Prefeitura de Lins" class="logo" />
+        </section>
+
+
+
+        <section class="cards">
+            <div class="card">
+                <h2>200</h2>
+                <p>Denúncias</p>
+            </div>
+            <div class="card">
+                <h2>180</h2>
+                <p>Vistorias Finalizadas</p>
+            </div>
+            <div class="card">
+                <h2>200</h2>
+                <p>Usuários</p>
+            </div>
+        </section>
+
+        <section class="menu">
+            <h3>Menu</h3>
+            <div class="menu-options">
+
+                <a href="listavistoria.html" class="option">
+                    <div class="option">
+                        <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <p>Vistorias</p>
+                    </div>
+                </a>
+                <a href="denuncia.html" class="option">
+                    <div class="option">
+                        <span class="icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                        <p>Denúncias</p>
+                    </div>
+                </a>
+                <a href="#" class="option">
+                    <div class="option">
+                        <span class="icon"><i class="fa-solid fa-file-lines"></i></span>
+                        <p>Relatórios</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="recent">
+            <div class="recent-header">
+                <p>Últimas vistorias feitas</p>
+                <a href="listavistoria.html">Ver Todas</a>
+            </div>
+            <div class="vistoria-item">
+                <span class="icon"><i class="fa-solid  fa-bell"></i></span>
+                <div>
+                    <p>Bairro Junqueira - <b style="color: #FF7F00;">Agente #0032</b></p>
+                    <small>24 de Abril de 2025 ás 10:54</small>
+                </div>
+                <span class="eye-icon" style="color: #FF7F00;"><i class="fa-solid fa-eye"></i></span>
+            </div>
+            <div class="vistoria-item">
+                <span class="icon"><i class="fa-solid  fa-bell"></i></span>
+                <div>
+                    <p>Bairro Xingu - <b style="color: #FF7F00;">Agente #3053</b></p>
+                    <small>22 de Abril de 2025 ás 08:14</small>
+                </div>
+                <span class="eye-icon" style="color: #FF7F00;"><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/menu.js"></script>
+</body>
+
+</html>

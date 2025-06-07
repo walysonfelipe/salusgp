@@ -1,0 +1,84 @@
+body {
+  background-color: #1F497D;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.protocolo-container {
+  background: #11325C;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.check-icon {
+  font-size: 3rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #FF7F00;
+}
+
+.descricao {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.protocolo-box {
+  background: #1d4276;
+  border: 2px dashed #FF7F00;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.protocolo-box button {
+  background: transparent;
+  border: none;
+  color: #FF7F00;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.protocolo-box button:hover {
+  color: #ffa740;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background: #FF7F00;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #e96d00;
+}

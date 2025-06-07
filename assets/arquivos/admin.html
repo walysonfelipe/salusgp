@@ -8,21 +8,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="assets/css/admin.css" />
 
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+
+    <nav class="sidebar closed">
+    <h2>Salus</h2>
+
+    <!-- Info do usuário dentro do menu -->
     <div class="user-info">
       <div class="avatar">WA</div>
       <div>
-        <strong class="first-name">Walyson</strong> Assis<br />
-        <span class="user-role">Administrador</span>
+        <div class="first-name">Walyson</div>
+        <div class="user-role">Administrador</div>
       </div>
     </div>
-  </header>
+
+    <a href="#"><i class="fa-solid fa-house"></i> Início</a>
+    <a href="#"><i class="fa-solid fa-bug"></i> Denúncias</a>
+    <a href="#"><i class="fa-solid fa-chart-column"></i> Estatísticas</a>
+    <a href="#"><i class="fa-solid fa-gear"></i> Configurações</a>
+  </nav>
+
+
+    <header class="topbar">
+      <div class="menu-icon" onclick="toggleSidebar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
 
   <main class="container">
     <section class="greeting">
@@ -31,8 +46,8 @@
     </section>
 
     <section class="logos">
-      <img src="logo.png" alt="Logo Salus" class="logo salus" />
-      <img src="lins2.png" alt="Prefeitura de Lins" class="logo" />
+      <img src="assets/images/logo.png" alt="Logo Salus" class="logo salus" />
+      <img src="assets/images/lins2.png" alt="Prefeitura de Lins" class="logo" />
     </section>
 
 
@@ -40,7 +55,7 @@
     <section class="cards">
       <div class="card">
         <h2>200</h2>
-        <p>Denuncias</p>
+        <p>Denúncias</p>
       </div>
       <div class="card">
         <h2>180</h2>
@@ -56,23 +71,24 @@
       <h3>Menu</h3>
       <div class="menu-options">
 
-        <a href="vistoria.html">
+        <a href="vistoria.html" class="option">
           <div class="option">
             <span class="icon">📋</span>
             <p>Vistorias</p>
           </div>
         </a>
-        <a href="denuncia.html">
+        <a href="denuncia.html" class="option">
           <div class="option">
             <span class="icon">🔔</span>
             <p>Denúncias</p>
           </div>
         </a>
-
+        <a href="admin.html" class="option">
         <div class="option">
           <span class="icon">📑</span>
           <p>Relatórios</p>
         </div>
+        </a>
       </div>
     </section>
 
@@ -91,6 +107,16 @@
       </div>
     </section>
   </main>
+
+    <script>
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      const main = document.querySelector('.main-content');
+      sidebar.classList.toggle('open');
+      sidebar.classList.toggle('closed');
+      main.classList.toggle('full');
+    }
+  </script>
 </body>
 
 </html>

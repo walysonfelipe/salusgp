@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protocolo Gerado</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/protocolo.css" />
+</head>
+<body>
+
+  <div class="protocolo-container">
+    <i class="fa-solid fa-circle-check check-icon"></i>
+    <h1>Protocolo Gerado com Sucesso!</h1>
+    <p class="descricao">Guarde este número de protocolo. Ele será enviado por e-mail e WhatsApp.</p>
+
+    <div class="protocolo-box">
+      <span id="protocolo">SALUS-349281</span>
+      <button onclick="copiarProtocolo()"><i class="fa-solid fa-copy"></i> Copiar</button>
+    </div>
+
+    <p class="info">
+      Você poderá acompanhar a denúncia futuramente com este código.
+    </p>
+
+    <a href="index.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</a>
+  </div>
+
+  <script>
+    function copiarProtocolo() {
+      const texto = document.getElementById("protocolo").innerText;
+      navigator.clipboard.writeText(texto).then(() => {
+        alert("Protocolo copiado para a área de transferência!");
+      });
+    }
+  </script>
+
+</body>
+</html>

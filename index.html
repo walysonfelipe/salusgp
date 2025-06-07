@@ -1,22 +1,196 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salus</title>
-  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Salus - Juntos Contra a Dengue</title>
 </head>
+
 <body>
-  <div class="container">
-    <img src="logolins.png" alt="Logo Salus" class="logo logo-cidade" />
 
-    <form class="login-form" action="admin.html">
-      <input type="text" placeholder="Email" />
-      <input type="password" placeholder="Senha" />
-      <button type="submit">Login</button>
-    </form>
+  <header class="header">
+    <div class="header-left">
+      <img src="assets/images/logo.png" alt="Logo Salus" class="logo" />
+    </div>
 
-    <img src="logo.png" alt="Logo Rodapé" class="footer-logo" />
+    <nav class="nav-desktop">
+      <a href="index.html">Home</a>
+      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="meuprotocolo.html">Meu Protocolo</a>
+      <a href="admin/login.html">Login</a>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="menu-mobile">
+      <a href="index.html">Home</a>
+      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="meuprotocolo.html">Meu Protocolo</a>
+      <a href="admin/login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>JUNTOS CONTRA A <span>DENGUE</span>.</h1>
+      <p>O mosquito da dengue não tira folga, e nossa atenção também não pode. Não dê chance ao perigo: um pequeno
+        descuido pode afetar toda a vizinhança.</p>
+      <div class="hero-buttons">
+        <div class="btn1">
+          <a class="btn-orange" href="denuncia.html">Denunciar Foco Agora</a>
+        </div>
+        <div class="btn2">
+          <a class="btn" href="#mapa">Saber Mais sobre a Dengue</a>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/hero.png" class="mosquito" alt="Mosquito com celular" />
+  </section>
+
+
+
+  <div class="carrossel">
+    <div class="container1">
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#PREFEITURADELINSCONTRADENGUE</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#PREFEITURADELINSCONTRADENGUE</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#PREFEITURADELINSCONTRADENGUE</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#PREFEITURADELINSCONTRADENGUE</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#FAÇASUADENUNCIA</div>
+      <div class="item">#PREFEITURADELINSCONTRADENGUE</div>
+    </div>
   </div>
+
+
+  <section class="section">
+    <img src="assets/images/hero.png" alt="Mosquito na planta" />
+    <div class="section-text">
+      <h2>A Dengue Começa Pequeno,<br> Mas o Impacto Pode Ser Gigante.</h2>
+      <p>O impacto na vida da sua família pode ser gigante. O mosquito Aedes aegypti só precisa de um pequeno descuido
+        nosso para se proliferar. Não vamos dar essa chance ao perigo. A ação começa agora, no seu quintal. Proteja sua
+        família e seu bairro. Ajude a identificar e eliminar os focos do mosquito.</p>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="steps-text">
+      <h2>Como funciona:</h2>
+      <div class="step"><strong>1. Identificação</strong> - Nome, CPF e telefone.</div>
+      <div class="step"><strong>2. Localização</strong> - Endereço do foco.</div>
+      <div class="step"><strong>3. Imagem</strong> - Foto ajuda muito!</div>
+      <div class="step"><strong>4. Confirmação</strong> - Protocolo enviado.</div>
+    </div>
+    <img src="assets/images/hero.png" alt="Passos da denúncia" />
+  </section>
+
+  <section class="info-dengue">
+    <div class="info-box">
+      <h2>O que é a Dengue?</h2>
+      <p>É uma doença viral transmitida pelo mosquito Aedes aegypti. Causa febre alta, dores no corpo e pode levar à morte.</p>
+    </div>
+    <div class="info-box">
+      <h2>Prevenção</h2>
+      <p>O mosquito Aedes aegypti transmite o vírus da dengue, que causa febre alta e fortes dores. A prevenção é a única arma. Cuidado!</p>
+    </div>
+  </section>
+
+    <section class="mapa">
+    <h2>Casos na Cidade de Lins</h2>
+    <div class="mapa-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59324.51018516037!2d-49.78575716379905!3d-21.672340500508618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be14d250277975%3A0x3fc5d189489e0104!2sLins%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1749231280419!5m2!1spt-BR!2sbr" width="100%" height="480"></iframe>
+        </div>
+  </section>
+
+  <section class="estatisticas">
+    <h2>Estatísticas Recentes</h2>
+    <div class="estatisticas-cards">
+      <div class="card">
+        <h3  class="numero">123</h3>
+        <p>Casos Ativos</p>
+      </div>
+      <div class="card">
+        <h3  class="numero">87</h3>
+        <p>Casos Recuperados</p>
+      </div>
+      <div class="card">
+        <h3  class="numero">12</h3>
+        <p>Bairros em Alerta</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Como sei se estou com dengue?</h3>
+        <p>Os sintomas incluem febre alta, dor de cabeça, dores musculares e nas articulações.</p>
+      </div>
+      <div class="faq-item">
+        <h3>O que devo fazer ao encontrar um foco?</h3>
+        <p>Use a plataforma para denunciar e, se seguro, elimine o foco de água parada imediatamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="parceria">
+    <h2>Em parceria com a Prefeitura de Lins</h2>
+    <div class="parceria-content">
+      <img src="assets/images/logolins.jpeg" alt="Prefeitura de Lins" style="max-width: 200px;">
+      <p>O projeto Salus conta com apoio oficial da Prefeitura Municipal de Lins, reforçando o compromisso com a saúde pública e o bem-estar da população.</p>
+    </div>
+  </section>
+
+  <section class="contato">
+    <h2>Fale Conosco</h2>
+    <form class="formulario-contato">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section> 
+
+
+<footer class="footer">
+  <div class="footer-logos">
+    <img src="assets/images/logo.png" alt="Logo Salus" class="logofo" />
+    <img src="assets/images/logolins.jpeg" alt="Prefeitura de Lins" class="logo-prefeitura" />
+  </div>
+
+  <p class="footer-parceria">
+    Projeto desenvolvido em parceria com a <strong>Prefeitura Municipal de Lins</strong>.
+  </p>
+
+  <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="denuncia.html">Realizar Denúncia</a>
+    <a href="meuprotocolo.html">Meu Protocolo</a>
+    <a href="admin/login.html">Login</a>
+  </nav>
+</footer>
+
 </body>
+
 </html>

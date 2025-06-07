@@ -1,0 +1,127 @@
+header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.hamburger span {
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  background-color: #11325C;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  padding: 60px 20px;
+  z-index: 1001;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidenav ul {
+  list-style: none;
+}
+
+.sidenav ul li {
+  margin-bottom: 20px;
+}
+
+.sidenav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidenav ul li i {
+  color: #FF7F00;
+}
+ a > i {
+  margin-right: 10px;
+}
+
+.button{
+  background-color: #FF7F00;
+  color: #ddd;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.button:hover{
+  color: #11325C;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 1000;
+}
+
+main {
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #FF7F00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.first-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FF7F00;
+}
+
+.user-role {
+  font-size: 0.85rem;
+  color: #ddd;
+}

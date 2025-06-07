@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Lateral Animado</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/denuncialista.css">
+  <link rel="stylesheet" href="../assets/css/menu.css">
+</head>
+
+<body>
+
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+  <header>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <nav id="sidenav" class="sidenav">
+    <div class="user-info">
+      <div class="avatar">WA</div>
+      <div>
+        <div class="first-name">Walyson</div>
+        <div class="user-role">Administrador</div>
+      </div>
+    </div>
+    <ul>
+
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+      <li><a href="denuncia.html"><i class="fa-solid fa-triangle-exclamation"></i> Denúncias</a></li>
+      <li><a href="listavistoria.html"><i class="fa-solid fa-magnifying-glass"></i> Vistorias</a></li>
+      <li><a href="#"><i class="fa-solid fa-file-lines"></i>Relatórios</a></li>
+      <li class="button">
+        <a href="index.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Denúncias Recebidas</h1>
+
+    <div class="card-list">
+
+      <div class="card">
+        <h3>Rua A, Bairro Y</h3>
+        <p><strong>Descrição:</strong> Água parada nos fundos da casa.</p>
+        <p><strong>Email:</strong> exemplo@email.com</p>
+        <div class="card-actions">
+          <button class="view"><i class="fa-solid fa-eye"></i> Ver</button>
+          <a href="vistoria.html"><button class="edit"><i class="fa-solid fa-pencil"></i> Editar</button></a>
+          <button class="delete"><i class="fa-solid fa-trash"></i> Excluir</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Rua A, Bairro Y</h3>
+        <p><strong>Descrição:</strong> Água parada nos fundos da casa.</p>
+        <p><strong>Email:</strong> exemplo@email.com</p>
+        <div class="card-actions">
+          <button class="view"><i class="fa-solid fa-eye"></i> Ver</button>
+          <a href="vistoria.html"><button class="edit"><i class="fa-solid fa-pencil"></i> Editar</button></a>
+          <button class="delete"><i class="fa-solid fa-trash"></i> Excluir</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Rua A, Bairro Y</h3>
+        <p><strong>Descrição:</strong> Água parada nos fundos da casa.</p>
+        <p><strong>Email:</strong> exemplo@email.com</p>
+        <div class="card-actions">
+          <button class="view"><i class="fa-solid fa-eye"></i> Ver</button>
+          <a href="vistoria.html"><button class="edit"><i class="fa-solid fa-pencil"></i> Editar</button></a>
+          <button class="delete"><i class="fa-solid fa-trash"></i> Excluir</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../assets/js/menu.js"></script>
+</body>
+
+</html>
