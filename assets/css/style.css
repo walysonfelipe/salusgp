@@ -354,6 +354,20 @@ img {
   gap: 1.5rem;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* opcional para bordas arredondadas */
+}
+
 /* CARD */
 .estatisticas .card {
   background: #1F497D;
