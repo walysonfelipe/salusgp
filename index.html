@@ -17,9 +17,10 @@
 
     <nav class="nav-desktop">
       <a href="index.html">Home</a>
-      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="#steps">Como <span>funciona?</span></a>
+      <a href="#stat">Casos na cidade</a>
       <a href="meuprotocolo.html">Meu Protocolo</a>
-      <a href="admin/login.html">Login</a>
+      <a href="denuncia.html" class="rdenuncia">Denunciar Agora</a>
     </nav>
 
     <input type="checkbox" id="menu-toggle" />
@@ -31,9 +32,10 @@
 
     <nav class="menu-mobile">
       <a href="index.html">Home</a>
-      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="#steps">Como <span>funciona?</span></a>
+      <a href="#stat">Casos na cidade</a>
       <a href="meuprotocolo.html">Meu Protocolo</a>
-      <a href="admin/login.html">Login</a>
+      <a href="denuncia.html" class="rdenuncia">Denunciar Agora</a>
     </nav>
   </header>
 
@@ -47,7 +49,7 @@
           <a class="btn-orange" href="denuncia.html">Denunciar Foco Agora</a>
         </div>
         <div class="btn2">
-          <a class="btn" href="#mapa">Saber Mais sobre a Dengue</a>
+          <a class="btn" href="#mapa">Ver casos de Dengue</a>
         </div>
       </div>
     </div>
@@ -93,7 +95,7 @@
     </div>
   </section>
 
-  <section class="steps">
+  <section class="steps" id="steps">
     <div class="steps-text">
       <h2>Como funciona:</h2>
       <div class="step"><strong>1. Identificação</strong> - Nome, CPF e telefone.</div>
@@ -104,20 +106,8 @@
     <img src="assets/images/denuncia.png" alt="Passos da denúncia" />
   </section>
 
-  <section class="info-dengue">
-    <div class="info-box">
-      <h2>O que é a Dengue?</h2>
-      <p>É uma doença viral transmitida pelo mosquito Aedes aegypti. Causa febre alta, dores no corpo e pode levar à
-        morte.</p>
-    </div>
-    <div class="info-box">
-      <h2>Prevenção</h2>
-      <p>O mosquito Aedes aegypti transmite o vírus da dengue, que causa febre alta e fortes dores. A prevenção é a
-        única arma. Cuidado!</p>
-    </div>
-  </section>
 
-  <section class="mapa">
+  <section class="mapa" id="mapa">
     <h2>Casos na Cidade de Lins</h2>
     <div class="mapa-container">
       <iframe
@@ -126,7 +116,7 @@
     </div>
   </section>
 
-  <section class="estatisticas">
+  <section class="estatisticas" id="stat">
     <h2>Estatísticas Recentes</h2>
     <div class="estatisticas-cards">
       <div class="card">
@@ -147,6 +137,16 @@
   <section class="faq">
     <h2>Perguntas Frequentes</h2>
     <div class="faq-list">
+      <div class="faq-item">
+        <h3>O que é a Dengue?</h3>
+        <p>É uma doença viral transmitida pelo mosquito Aedes aegypti. Causa febre alta, dores no corpo e pode levar à
+        morte.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Prevenção</h3>
+        <p>O mosquito Aedes aegypti transmite o vírus da dengue, que causa febre alta e fortes dores. A prevenção é a
+        única arma. Cuidado!</p>
+      </div>
       <div class="faq-item">
         <h3>Como sei se estou com dengue?</h3>
         <p>Os sintomas incluem febre alta, dor de cabeça, dores musculares e nas articulações.</p>

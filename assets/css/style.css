@@ -22,13 +22,13 @@ img {
 
 .header {
   background-color: #1F497D;
-  padding: 1.5rem 5%;
+  padding: 1.3rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  border-bottom: 4px solid #FF7F00;
+
 }
 
 .logo {
@@ -37,22 +37,29 @@ img {
 
 .nav-desktop {
   display: none;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-desktop a,
 .menu-mobile a {
-  color: #FF7F00;
+  color: #f7f7f7;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
+
+  font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
-.nav-desktop a:hover,
-.menu-mobile a:hover {
-  color: #ffa740;
+.nav-desktop a span{
+  color: #e86f00;
 }
+
+.rdenuncia {
+  padding: 5px 9px;
+  background-color: #e86f00;
+  border-radius: 10px;
+}
+
+
 
 .menu-icon {
   display: flex;
@@ -276,35 +283,6 @@ img {
   object-fit: contain;
 }
 
-.info-dengue {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 1.5rem;
-  align-items: center;
-  text-align: center;
-}
-
-.info-box {
-  background: #11325C;
-  color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  max-width: 600px;
-  width: 100%;
-}
-
-.info-box h2 {
-  font-size: 1.6rem;
-  color: #FF7F00;
-  margin-bottom: 1rem;
-}
-
-.info-box p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
 
 .mapa {
   padding: 3rem 1.5rem;
@@ -325,7 +303,7 @@ img {
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .mapa iframe {
@@ -357,7 +335,7 @@ img {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -365,7 +343,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px; /* opcional para bordas arredondadas */
+  border-radius: 10px;
+
 }
 
 /* CARD */
@@ -583,6 +562,7 @@ img {
 
   .nav-desktop {
     display: flex;
+    align-items: center;
   }
 
   .hero-text h1 {
@@ -653,30 +633,9 @@ img {
     font-size: 1.1rem;
   }
 
-   .info-dengue {
-    flex-direction: row;
-    justify-content: center;
-    padding: 4rem 5%;
-    text-align: left;
-    align-items: stretch; 
-  }
 
-  .info-box {
-    flex: 1;
-    height: 100%;             
-    flex-direction: column;
-    justify-content: space-between;
-  }
 
-  .info-box h2 {
-    font-size: 1.8rem;
-  }
-
-  .info-box p {
-    font-size: 1.1rem;
-  }
-
-    .mapa {
+  .mapa {
     padding: 4rem 5%;
   }
 
@@ -737,7 +696,7 @@ img {
     font-size: 1.1rem;
   }
 
-    .contato h2 {
+  .contato h2 {
     font-size: 2rem;
   }
 
@@ -745,7 +704,11 @@ img {
   .formulario-contato textarea {
     font-size: 1.1rem;
   }
-  
+
+
+  .video-container {
+    width: 410px;
+  }
 }
 
 @media (min-width: 1024px) {

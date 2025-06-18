@@ -190,3 +190,19 @@ h1 {
 .btn-voltar:hover {
   background: #ffffff25;
 } 
+
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none !important;
+  }
+
+  .nav-desktop {
+    display: flex;
+  }
+
+}
