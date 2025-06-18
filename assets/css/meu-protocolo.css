@@ -1,7 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   background-color: #1F497D;
   font-family: "Noto Sans", sans-serif;
   color: white;
+}
+
+.header {
+  background-color: #1F497D;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-bottom: 4px solid #FF7F00;
+}
+
+/* Header */
+.header {
+  background-color: #1F497D;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-bottom: 4px solid #FF7F00;
+}
+
+.logo {
+  max-height: 48px;
+}
+
+.nav-desktop {
+  display: none;
+  gap: 2rem;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: #FF7F00;
+  border-radius: 2px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  background-color: #11325C;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+#menu-toggle:checked+.menu-icon+.menu-mobile {
+  display: flex;
+}
+
+.menu-mobile a,
+.nav-desktop a {
+  color: #FF7F00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-mobile a:hover,
+.nav-desktop a:hover {
+  color: #ffa740;
+}
+
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,15 +118,10 @@ body {
   gap: 1.5rem;
 }
 
-.logo-protocolo {
-  width: 100px;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
-
 .search-icon {
-  font-size: 3rem;
-  color: #FF7F00;
+  font-size: 1.6rem;
+  padding-right: 10px;
+  color: var(--color-accent);
 }
 
 h1 {
@@ -66,7 +156,7 @@ h1 {
   font-size: 1rem;
   border: none;
   border-radius: 6px;
-  background-color: #4A4541;
+  background-color: #1d4276;
   color: white;
   border-bottom: 2px solid #FF7F00;
   outline: none;
@@ -84,10 +174,7 @@ h1 {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.protocolo-form button:hover {
-  background-color: #e96d00;
-  transform: scale(1.02);
-}
+
 
 .btn-voltar {
   display: inline-block;
@@ -102,4 +189,4 @@ h1 {
 
 .btn-voltar:hover {
   background: #ffffff25;
-}
+} 

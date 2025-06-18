@@ -9,11 +9,33 @@
 </head>
 <body>
 
-  <div class="protocolo-container">
-    <img src="assets/images/logo.png" alt="Logo Salus" class="logo-protocolo" />
+  <header class="header">
+    <img src="assets/images/logo.png" alt="Logo Salus" class="logo" />
 
-    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-    <h1>Consultar Protocolo</h1>
+    <nav class="nav-desktop">
+      <a href="index.html">Home</a>
+      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="meuprotocolo.html">Meu Protocolo</a>
+      <a href="admin/login.html">Login</a>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="menu-mobile">
+      <a href="index.html">Home</a>
+      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="meuprotocolo.html">Meu Protocolo</a>
+      <a href="admin/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+  <div class="protocolo-container">
+    
+    <h1><i class="fa-solid fa-magnifying-glass search-icon"></i>Consultar Protocolo</h1>
     <p class="descricao">Digite seu número de protocolo abaixo para verificar o status da denúncia.</p>
 
     <form class="protocolo-form">
@@ -24,6 +46,7 @@
 
     <a href="index.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</a>
   </div>
+  </main>
 
 </body>
 </html>
