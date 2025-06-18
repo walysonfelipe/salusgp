@@ -2,6 +2,9 @@
 
 Projeto interdisciplinar desenvolvido no **1º semestre de Análise e Desenvolvimento de Sistemas (ADS)** da FATEC. O sistema visa facilitar o envio e a gestão de denúncias de focos de dengue na cidade, promovendo saúde pública e engajamento social.
 
+
+Alunos: [Walyson Felipe](https://github.com/walysonfelipe) , [Filipe Alexandre](https://github.com/Filipehs), [Gabriel Martins](https://github.com/orickzs), [Gabriel Cardinali](https://github.com/Grayved)
+
 🔗 Acesse: [https://salusdengue.netlify.app](https://salusdengue.netlify.app)
 
 ---
