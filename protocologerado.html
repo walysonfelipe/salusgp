@@ -8,7 +8,30 @@
   <link rel="stylesheet" href="assets/css/protocolo.css" />
 </head>
 <body>
+  <header class="header">
+    <img src="assets/images/logo.png" alt="Logo Salus" class="logo" />
 
+    <nav class="nav-desktop">
+      <a href="index.html">Home</a>
+      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="meuprotocolo.html">Meu Protocolo</a>
+      <a href="admin/login.html">Login</a>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="menu-mobile">
+      <a href="index.html">Home</a>
+      <a href="denuncia.html">Realizar Denúncia</a>
+      <a href="meuprotocolo.html">Meu Protocolo</a>
+      <a href="admin/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
   <div class="protocolo-container">
     <i class="fa-solid fa-circle-check check-icon"></i>
     <h1>Protocolo Gerado com Sucesso!</h1>
@@ -24,7 +47,9 @@
     </p>
 
     <a href="index.html" class="btn-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</a>
-  </div>
+  </div>    
+  </main>
+
 
   <script>
     function copiarProtocolo() {

@@ -1,7 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #1F497D;
   font-family: "Noto Sans", sans-serif;
   color: white;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #1F497D;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-bottom: 4px solid #FF7F00;
+}
+
+/* Header */
+.header {
+  background-color: #1F497D;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-bottom: 4px solid #FF7F00;
+}
+
+.logo {
+  max-height: 48px;
+}
+
+.nav-desktop {
+  display: none;
+  gap: 2rem;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: #FF7F00;
+  border-radius: 2px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  background-color: #11325C;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+#menu-toggle:checked + .menu-icon + .menu-mobile {
+  display: flex;
+}
+
+.menu-mobile a,
+.nav-desktop a {
+  color: #FF7F00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-mobile a:hover,
+.nav-desktop a:hover {
+  color: #ffa740;
+}
+
+
+
+main{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +106,6 @@ body {
   padding: 2rem;
   text-align: center;
 }
-
 .protocolo-container {
   background: #11325C;
   border-radius: 12px;
