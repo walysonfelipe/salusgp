@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salus</title>
+  <title>Salus - Denúncia #0001</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/vistoria.css" />
+  <link rel="stylesheet" href="../assets/css/denuncia.css" />
   <link rel="stylesheet" href="../assets/css/menu.css" />
 </head>
 
@@ -43,27 +42,35 @@
       </li>
     </ul>
   </nav>
+
   <main class=" container">
-
     <section class="forms">
-      <form class="login-form" action="listavistoria.html">
-        <h1>Vistoria</h1>
-        <label><b>Denúncia</b></label>
-        <select id="estado" name="estado">
-          <option value="Denuncia1">20250001</option>
-          <option value="Denuncia2">20250002</option>
-          <option value="Denuncia3">20250003</option>
-        </select>
+      <form class="login-form" action="vistoria.html" >
+        <h1>Denúncia #0001</h1>
 
-        <label><b>Agente Responsável</b></label>
-        <select id="estado" name="estado">
-          <option value="Agente1">Agente 1</option>
-          <option value="Agente2">Agente 2</option>
-          <option value="Agente3">Agente 3</option>
-        </select>
-        <br>
-        <button type="submit">Criar Vistoria</button>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="Ricardo Honorato" disabled />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="ricardohonorato@gmail.com" disabled />
+
+        <label for="telefone">Telefone (Opcional):</label>
+        <input type="tel" id="telefone" name="telefone" maxlength="11" value="(14) 99899-0909" disabled />
+
+        <label for="local-geral">Local ou problema geral:</label>
+        <input type="text" id="local-geral" name="local-geral" value="R. Osvaldo Cruz, 353-257 - Centro" disabled />
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" disabled>Água parada nos fundos da casa.</textarea>
+        <label for="denuncia">Foto da Denuncia:</label>
+        <img src="../assets/images/hero.png" alt="" width="400px" height="400px">
+
+         <button class="edit"><i class="fa-solid fa-pencil"></i> Atribuir Vistoria</button>
+        </div>
+
       </form>
+
+      <a href="index.html" class="btn-voltar">← Voltar para o início</a>
     </section>
   </main>
 
