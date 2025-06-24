@@ -51,5 +51,5 @@ Painel exclusivo para **administradores e agentes da prefeitura**, com as seguin
 ## 🚀 Como rodar localmente
 
 ```bash
-git clone https://github.com/walysonfelipe/Salus-fatec.git
-cd Salus-fatec
+git clone https://github.com/walysonfelipe/salusgp.git
+cd salusgp
