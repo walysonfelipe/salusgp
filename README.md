@@ -25,7 +25,7 @@ Alunos: [Walyson Felipe](https://github.com/walysonfelipe) , [Filipe Alexandre](
 ## 🛠 Tecnologias Utilizadas
 
 - **HTML5** – Estrutura semântica do site
-- **CSS3 (Flexbox + Grid)** – Estilo e responsividade
+- **CSS3 (Flexbox)** – Estilo e responsividade
 - **JavaScript** – Menu
 - **Netlify** – Deploy e hospedagem estática
 
