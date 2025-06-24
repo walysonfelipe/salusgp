@@ -25,7 +25,7 @@ Alunos: [Walyson Felipe](https://github.com/walysonfelipe) , [Filipe Alexandre](
 ## 🛠 Tecnologias Utilizadas
 
 - **HTML5** – Estrutura semântica do site
-- **CSS3 (Flexbox + Grid)** – Estilo e responsividade
+- **CSS3 (Flexbox)** – Estilo e responsividade
 - **JavaScript** – Menu
 - **Netlify** – Deploy e hospedagem estática
 
@@ -51,5 +51,5 @@ Painel exclusivo para **administradores e agentes da prefeitura**, com as seguin
 ## 🚀 Como rodar localmente
 
 ```bash
-git clone https://github.com/walysonfelipe/Salus-fatec.git
-cd Salus-fatec
+git clone https://github.com/walysonfelipe/salusgp.git
+cd salusgp
