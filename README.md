@@ -1,11 +1,13 @@
 # 🦟 Salus – Sistema de Denúncia Contra a Dengue
 
-Projeto interdisciplinar desenvolvido no **1º semestre de Análise e Desenvolvimento de Sistemas (ADS)** da FATEC. O sistema visa facilitar o envio e a gestão de denúncias de focos de dengue na cidade, promovendo saúde pública e engajamento social.
+Projeto interdisciplinar desenvolvido no **1º semestre de Análise e Desenvolvimento de Sistemas (ADS)** da FATEC LINS. O sistema visa facilitar o envio e a gestão de denúncias de focos de dengue na cidade, promovendo saúde pública e engajamento social.
 
 
 Alunos: [Walyson Felipe](https://github.com/walysonfelipe) , [Filipe Alexandre](https://github.com/Filipehs), [Gabriel Martins](https://github.com/orickzs), [Gabriel Cardinali](https://github.com/Grayved)
 
 🔗 Acesse: [https://salusdengue.netlify.app](https://salusdengue.netlify.app)
+
+🔗 Acesse o protótipo: [Clique aqui](https://www.figma.com/design/u5i8CPbZ90HTyzcEwiDLcu/Salus-FATEC?node-id=0-1&t=1wodAP8ux8v6NBlx-1)
 
 ---
 
@@ -24,7 +26,7 @@ Alunos: [Walyson Felipe](https://github.com/walysonfelipe) , [Filipe Alexandre](
 
 - **HTML5** – Estrutura semântica do site
 - **CSS3 (Flexbox + Grid)** – Estilo e responsividade
-- **JavaScript** – Lógica de formulário, contadores e interações
+- **JavaScript** – Menu
 - **Netlify** – Deploy e hospedagem estática
 
 ---
@@ -42,9 +44,7 @@ Painel exclusivo para **administradores e agentes da prefeitura**, com as seguin
   - Quantidade de usuários
 - 📝 **Gerenciamento de denúncias**
 - 👀 **Acompanhamento de vistorias**
-- 🔔 Histórico das últimas vistorias com notificações
-
-Tudo com design escuro e navegação lateral moderna, oferecendo uma experiência clara e objetiva para os gestores municipais.
+- 🔔 Histórico das últimas vistorias
 
 ---
 
