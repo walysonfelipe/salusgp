@@ -1,0 +1,6 @@
+Links Úteis
+
+🔗 Acesse o protótipo: https://www.figma.com/design/u5i8CPbZ90HTyzcEwiDLcu/Salus-FATEC?node-id=0-1&t=1wodAP8ux8v6NBlx-1
+🔗 Acesse a apresentação do protótipo: https://www.figma.com/deck/ZTHfrDF1WksfOtd03J0hMr/SalusFinal_PW?node-id=1-929&t=DF4tjSvzNpjjDgey-1
+🔗 Acesse site hospedado: https://salusdengue.netlify.app
+🔗 Acesse o repositorio: https://github.com/walysonfelipe/salusgp
